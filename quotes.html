@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Request a Service</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style2.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper2">
+        <header>
+            <h2>Suttner Window Washing</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="scheduling.html">Scheduling</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h3>Get A Quote!</h3>
+        </div>
+        <main>
+           <form action="contact.php" method="post">
+                <label for="myFName">* First Name: </label><input type="text" name="myFName" id="myFName" placeholder="John" required><br>
+                <label for="myLName">* Last Name: </label> <input type="text" name="myLName" id="myLName" placeholder="Doe" required><br>
+                <label for="myEmail">* E-mail: </label><input type="email" name="myEmail" id="myEmail" placeholder="john.doe@email.com"  required><br>
+                <label for="myPhone">* Phone: </label><input type="tel" name="myPhone" id="myPhone" placeholder="(123)-456-7899" required><br>
+
+                <input type="checkbox" id="windows" name="windows" value="window"><label for="windows"> Window Cleaning</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"><label for="vehicle2"> Detailing - Truck/SUV</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><label for="vehicle3"> Detailing - Sedan/Crossover</label><br>
+
+                <label for="mySF">Square Footage: </label><input type="number" name="mySF" id="mySF" placeholder="2500"><br>
+                <label for="myComments">Comments: </label><br><textarea name="myComments" rows="4" cols="30" id="myComments"></textarea><br>
+                <label for="mySubmit"></label><input type="submit" id="mySubmit">
+           </form>  
+           <p>Prices generally range between $100 - $120 for an average home (2500 square feet),
+               while detailing is $50 for a smaller car, $75 for larger vehicles. A 10% discount is applied if you bundle
+               your window washing service with a car detailing.
+           </p>
+        </main>
+        </div>
+    </body>
+
+</html>

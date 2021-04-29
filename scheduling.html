@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Request a Service</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h2>Suttner Window Washing</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="scheduling.html">Scheduling</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h3>Already Have a Quote? Request a Service Here!</h3>
+        </div>
+        <main>
+           <form action="contact.php" method="post">
+                <label for="myFName">* First Name:</label><input type="text" name="myFName" id="myFName" placeholder="John" required>
+                <label for="myLName">* Last Name:</label> <input type="text" name="myLName" id="myLName" placeholder="Doe" required>
+                <label for="myEmail">* E-mail:</label><input type="email" name="myEmail" id="myEmail" placeholder="john.doe@email.com"  required>
+                <label for="myPhone">* Phone:</label><input type="tel" name="myPhone" id="myPhone" placeholder="(123)-456-7899" required>
+                <label for="myDate">* Date:</label><input type="datetime-local" name="myDate" id="myDate">
+                <label for="myComments">Comments:</label><textarea name="myComments" rows="4" cols="50" id="myComments"></textarea>
+                <label for="mySubmit"></label><input type="submit" id="mySubmit">
+           </form>  
+        </main>
+        </div>
+    </body>
+
+</html>
